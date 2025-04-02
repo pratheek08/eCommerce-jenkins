@@ -4,7 +4,7 @@ pipeline {
     environment {
         CONTAINER_NAME = "ecommerce"
         DOCKER_CRED = "docker_creds"
-        DOCKER_IMAGE = "kpkm25/jenkins-ecommerce"
+        DOCKER_IMAGE = "igris08/jenkins-ecommerce"
     }
 
     stages {
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     echo "Cloning the repository..."
-                    git url: "https://github.com/KPkm25/jenkins-ecommerce", branch: "main"
+                    git url: "https://github.com/pratheek08/eCommerce-jenkins/", branch: "main"
                 }
             }
         }
