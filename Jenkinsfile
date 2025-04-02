@@ -31,7 +31,7 @@ pipeline {
                 script {
                     echo "Pushing Docker image to Docker Hub..."
 withDockerRegistry([credentialsId: 'docker-creds', url: 'https://index.docker.io/v1/']) {
-    docker.image('kpkm25/jenkins-ecommerce').push()
+    docker.image('igris08/jenkins-ecommerce').push()
 }
 
                 }
